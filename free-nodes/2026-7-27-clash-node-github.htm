@@ -185,14 +185,19 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Trojan 的伪装域名配置需要注意什么？</h5></div>
+    <div class="panel-body">
+        伪装域名必须真实可访问并有有效证书，否则客户端无法建立连接。正确配置可隐藏真实流量特征，降低被封锁风险，保证节点长期稳定可用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>SSR 的协议插件如何增强安全性？</h5></div>
+    <div class="panel-body">
+        协议插件可隐藏真实流量特征并模拟正常协议，防止被封锁或 DPI 检测。结合加密方式和混淆方法，可以提升节点的稳定性和长期可用性，保证数据传输安全。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>VLESS + XTLS 模式在移动网络下表现如何？</h5></div>
     <div class="panel-body">
         XTLS 降低加密开销，减少握手次数，适合高延迟或不稳定的移动网络。结合策略组和多出口节点，可提升访问速度和连接稳定性，确保用户体验流畅。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 节点测速功能如何优化连接？</h5></div>
-    <div class="panel-body">
-        Shadowrocket 定期测速节点延迟和丢包率，并结合策略组自动切换到最佳节点。保证网页、视频和游戏流量通过最优路径，提高访问速度和连接稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>在 Clash 中使用混合代理模式有什么好处？</h5></div>
@@ -205,34 +210,29 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         在服务器与客户端配置中设置合适的 SNI（伪装域名）并启用 ALPN（例如 http/1.1），确保 TLS 握手时使用常见的应用层协议标识，从而增加流量与普通 HTTPS 的相似度，降低被检测概率。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 如何实现节点自动切换？</h5></div>
-    <div class="panel-body">
-        Shadowrocket 可结合延迟测速和策略组自动选择低延迟、稳定节点处理不同流量。提高网页、视频和游戏访问速度，减少掉线和卡顿，优化整体上网体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 的规则模式有哪些？</h5></div>
-    <div class="panel-body">
-        Clash 提供三种主要模式：Global（全局代理）、Rule（规则代理）和Direct（直连）。全局模式会让所有流量通过代理；规则模式根据规则文件自动分流；直连模式则完全不经过代理。用户可根据需求灵活切换。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 的混淆插件如何增强隐蔽性？</h5></div>
     <div class="panel-body">
         混淆插件可模拟正常协议特征，如 HTTP 或 TLS 流量，使 SSR 流量难以被检测。合理选择混淆方式和协议，可提升在高封锁环境下的长期稳定性和安全性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的协议插件如何增强安全性？</h5></div>
-    <div class="panel-body">
-        协议插件可隐藏真实流量特征并模拟正常协议，防止被封锁或 DPI 检测。结合加密方式和混淆方法，可以提升节点的稳定性和长期可用性，保证数据传输安全。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan 的伪装域名配置需要注意什么？</h5></div>
-    <div class="panel-body">
-        伪装域名必须真实可访问并有有效证书，否则客户端无法建立连接。正确配置可隐藏真实流量特征，降低被封锁风险，保证节点长期稳定可用。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>如何配置 Sing-box 使用 DoH 加密 DNS？</h5></div>
     <div class="panel-body">
-        在 dns 模块中添加类型为 doh 的上游，如 `https://1.1.1.1/dns-query`，并指定 bootstrap 地址。启用加密 DNS 可防止 DNS 泄露并加快国际解析速度，提高整体隐私保护。    </div>
+        在 dns 模块中添加类型为 doh 的上游，如 `https://1.1.1.1/dns-query`，并指定 bootstrap 地址。启用加密 DNS 可防止 DNS 泄露并加快国际解析速度，提高整体隐私保护。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Shadowrocket 如何实现节点自动切换？</h5></div>
+    <div class="panel-body">
+        Shadowrocket 可结合延迟测速和策略组自动选择低延迟、稳定节点处理不同流量。提高网页、视频和游戏访问速度，减少掉线和卡顿，优化整体上网体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Shadowrocket 节点测速功能如何优化连接？</h5></div>
+    <div class="panel-body">
+        Shadowrocket 定期测速节点延迟和丢包率，并结合策略组自动切换到最佳节点。保证网页、视频和游戏流量通过最优路径，提高访问速度和连接稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 的规则模式有哪些？</h5></div>
+    <div class="panel-body">
+        Clash 提供三种主要模式：Global（全局代理）、Rule（规则代理）和Direct（直连）。全局模式会让所有流量通过代理；规则模式根据规则文件自动分流；直连模式则完全不经过代理。用户可根据需求灵活切换。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -281,16 +281,16 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-7-15-clash-verge-rev-github.htm" title="梯子猫VPN | 7月15日20.5M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/Clash节点/SSR节点/V2ray节点节点推荐">梯子猫VPN | 7月15日20.5M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/Clash节点/SSR节点/V2ray节点节点推荐</a><hr /></li>
-                        <li class="py-2"><a href="/news/article-267684.htm" title="探索Clash珠宝的独特魅力：设计美学与选购全攻略">探索Clash珠宝的独特魅力：设计美学与选购全攻略</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-26-clash-verge-rev-nodes.htm" title="梯子猫VPN | 7月26日21.4M/S|免费Shadowrocket节点/Singbox节点/Trojan节点/Clash节点/SSR节点/V2ray节点节点推荐">梯子猫VPN | 7月26日21.4M/S|免费Shadowrocket节点/Singbox节点/Trojan节点/Clash节点/SSR节点/V2ray节点节点推荐</a><hr /></li>
-                        <li class="py-2"><a href="/news/article-260380.htm" title="Shadowrocket从入门到精通：iOS设备代理配置完全指南">Shadowrocket从入门到精通：iOS设备代理配置完全指南</a><hr /></li>
-                        <li class="py-2"><a href="/news/article-264637.htm" title="乘风破浪的艺术：冲浪板全解析与新手进阶指南">乘风破浪的艺术：冲浪板全解析与新手进阶指南</a><hr /></li>
-                        <li class="py-2"><a href="/news/article-271598.htm" title="全面解析冲哥（Clash）：使用与配置指南">全面解析冲哥（Clash）：使用与配置指南</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-23-node-share.htm" title="梯子猫VPN | 7月23日22.4M/S|免费Trojan节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点节点推荐">梯子猫VPN | 7月23日22.4M/S|免费Trojan节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-264202.htm" title="彻底解决v2ray无法使用移动数据的终极指南：从排查到优化">彻底解决v2ray无法使用移动数据的终极指南：从排查到优化</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-270737.htm" title="深度解读Vmess节点：从原理到配置，科学上网的全方位指南">深度解读Vmess节点：从原理到配置，科学上网的全方位指南</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-7-25-clash-v2ray-ss-ssr.htm" title="梯子猫VPN | 7月25日22M/S|免费Clash节点/Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点/SSR节点节点推荐">梯子猫VPN | 7月25日22M/S|免费Clash节点/Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点/SSR节点节点推荐</a><hr /></li>
-                        <li class="py-2"><a href="/news/article-268118.htm" title="彻底攻克v2ray ioread报错：从原理到实战的终极解决方案">彻底攻克v2ray ioread报错：从原理到实战的终极解决方案</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-21-clash-stash.htm" title="梯子猫VPN | 7月21日18.3M/S|免费Trojan节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点节点推荐">梯子猫VPN | 7月21日18.3M/S|免费Trojan节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-263765.htm" title="V2Ray客户端Latern终极配置指南：从入门到精通的安全上网实战">V2Ray客户端Latern终极配置指南：从入门到精通的安全上网实战</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-verge-rev-node-2026-7-31.htm" title="梯子猫VPN | 7月31日18.9M/S|免费V2ray节点/SSR节点/Singbox节点/Trojan节点/Clash节点/Shadowrocket节点节点推荐">梯子猫VPN | 7月31日18.9M/S|免费V2ray节点/SSR节点/Singbox节点/Trojan节点/Clash节点/Shadowrocket节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-19-clash-stash.htm" title="梯子猫VPN | 7月19日21.7M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点/SSR节点/Clash节点节点推荐">梯子猫VPN | 7月19日21.7M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点/SSR节点/Clash节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-266372.htm" title="Shadowsocks科学上网全攻略：从入门到精通">Shadowsocks科学上网全攻略：从入门到精通</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-270297.htm" title="突破网络封锁：IE浏览器科学上网终极指南">突破网络封锁：IE浏览器科学上网终极指南</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-27-clash-node-github.htm" title="梯子猫VPN | 7月27日22.7M/S|免费Trojan节点/Shadowrocket节点/V2ray节点/SSR节点/Singbox节点/Clash节点节点推荐">梯子猫VPN | 7月27日22.7M/S|免费Trojan节点/Shadowrocket节点/V2ray节点/SSR节点/Singbox节点/Clash节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-262028.htm" title="全面解析共享Shadowrocket的使用和配置：从入门到精通的网络自由指南">全面解析共享Shadowrocket的使用和配置：从入门到精通的网络自由指南</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -302,7 +302,10 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">28</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
+                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">31</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">14</span> <a href="/date/2026-06/" title="2026-06 归档">2026-06</a></h4>
