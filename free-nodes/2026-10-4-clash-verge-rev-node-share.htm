@@ -183,41 +183,6 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 可以在哪些平台使用？</h5></div>
-    <div class="panel-body">
-        Shadowrocket 是一款 iOS 平台专用代理客户端，支持多种协议如 Vmess、Shadowsocks、Trojan 等。用户可通过导入订阅链接快速配置节点，配合规则分流功能实现精准网络代理。由于其强大功能，它是 iPhone 用户常用的科学上网工具。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 如何为不同用户设置流量限制？</h5></div>
-    <div class="panel-body">
-        管理员可为每个用户设置独立带宽限制和流量配额。超过限制时，可自动降速或阻止访问，确保服务器资源合理分配，避免单用户占用过多带宽，提升整体网络效率和公平性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Mellow 能与 Clash 共存吗？</h5></div>
-    <div class="panel-body">
-        可以。Mellow 与 Clash 核心不同，前者采用透明代理技术，后者通过系统代理生效。两者配置端口不冲突的情况下可共存运行，用于不同的流量处理场景。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 是否支持多出口自动选择？</h5></div>
-    <div class="panel-body">
-        支持。通过配置路由规则和策略组，Sing-box 可以自动判断流量类型并选择最佳出口，实现智能分流和多节点负载均衡，提高访问效率。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess 的安全性是否优于 Shadowsocks？</h5></div>
-    <div class="panel-body">
-        VMess 拥有动态验证机制和更复杂的握手协议，相较于静态密钥的 Shadowsocks 安全性更高。它能有效抵御重放攻击和 DPI 检测，更适合长期使用。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Mellow 的 TUN 模式与 SOCKS5 代理区别是什么？</h5></div>
-    <div class="panel-body">
-        TUN 模式拦截系统 IP 层流量，实现全局代理；SOCKS5 代理通常只影响特定应用。TUN 更适合全局加速、游戏和视频应用，保证所有流量走节点，提高网络稳定性和速度。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 如何通过节点测速自动切换最优线路？</h5></div>
-    <div class="panel-body">
-        WinXray 会定期检测节点延迟和丢包率，并结合策略组自动选择最佳节点。保证网页浏览、视频播放和游戏流量走低延迟节点，提高访问速度和网络稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>VMess 连接延迟过高该如何优化？</h5></div>
     <div class="panel-body">
         可尝试切换传输协议（如 WS、gRPC）、调整 MTU 或启用 MUX 多路复用功能。同时检查服务器地理位置、带宽和延迟，并选择最优节点以降低延迟。<hr />    </div>
@@ -228,9 +193,44 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         Potatso Lite 支持手动测试单个节点延迟，但不支持批量自动测速。用户需逐个连接测试节点性能，或者结合其他客户端获取更全面的测速信息。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>VMess 的安全性是否优于 Shadowsocks？</h5></div>
+    <div class="panel-body">
+        VMess 拥有动态验证机制和更复杂的握手协议，相较于静态密钥的 Shadowsocks 安全性更高。它能有效抵御重放攻击和 DPI 检测，更适合长期使用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 如何通过节点测速自动切换最优线路？</h5></div>
+    <div class="panel-body">
+        WinXray 会定期检测节点延迟和丢包率，并结合策略组自动选择最佳节点。保证网页浏览、视频播放和游戏流量走低延迟节点，提高访问速度和网络稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hiddify Next 如何为不同用户设置流量限制？</h5></div>
+    <div class="panel-body">
+        管理员可为每个用户设置独立带宽限制和流量配额。超过限制时，可自动降速或阻止访问，确保服务器资源合理分配，避免单用户占用过多带宽，提升整体网络效率和公平性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Sing-box 是否支持多出口自动选择？</h5></div>
+    <div class="panel-body">
+        支持。通过配置路由规则和策略组，Sing-box 可以自动判断流量类型并选择最佳出口，实现智能分流和多节点负载均衡，提高访问效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mellow 能与 Clash 共存吗？</h5></div>
+    <div class="panel-body">
+        可以。Mellow 与 Clash 核心不同，前者采用透明代理技术，后者通过系统代理生效。两者配置端口不冲突的情况下可共存运行，用于不同的流量处理场景。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mellow 的 TUN 模式与 SOCKS5 代理区别是什么？</h5></div>
+    <div class="panel-body">
+        TUN 模式拦截系统 IP 层流量，实现全局代理；SOCKS5 代理通常只影响特定应用。TUN 更适合全局加速、游戏和视频应用，保证所有流量走节点，提高网络稳定性和速度。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Sing-box 如何实现精确端口分流？</h5></div>
     <div class="panel-body">
-        Sing-box 支持按端口匹配流量，将不同类型应用流量分配到指定节点。结合策略组，可提高访问速度和网络稳定性，实现精准分流和优化用户体验。    </div>
+        Sing-box 支持按端口匹配流量，将不同类型应用流量分配到指定节点。结合策略组，可提高访问速度和网络稳定性，实现精准分流和优化用户体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Shadowrocket 可以在哪些平台使用？</h5></div>
+    <div class="panel-body">
+        Shadowrocket 是一款 iOS 平台专用代理客户端，支持多种协议如 Vmess、Shadowsocks、Trojan 等。用户可通过导入订阅链接快速配置节点，配合规则分流功能实现精准网络代理。由于其强大功能，它是 iPhone 用户常用的科学上网工具。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -279,16 +279,16 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-10-6-clash-node.htm" title="梯子猫VPN | 10月6日20.3M/S|免费Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点/Clash节点/SSR节点节点推荐">梯子猫VPN | 10月6日20.3M/S|免费Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点/Clash节点/SSR节点节点推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-2-clash-verge-rev-node-github.htm" title="梯子猫VPN | 9月2日23M/S|免费Clash节点/V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点/SSR节点节点推荐">梯子猫VPN | 9月2日23M/S|免费Clash节点/V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点/SSR节点节点推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-stash-2026-9-9.htm" title="梯子猫VPN | 9月9日22.9M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点节点推荐">梯子猫VPN | 9月9日22.9M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点节点推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-18-clash-node.htm" title="梯子猫VPN | 9月18日21.2M/S|免费Singbox节点/SSR节点/Clash节点/Trojan节点/V2ray节点/Shadowrocket节点节点推荐">梯子猫VPN | 9月18日21.2M/S|免费Singbox节点/SSR节点/Clash节点/Trojan节点/V2ray节点/Shadowrocket节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-20-clash-stash-node.htm" title="梯子猫VPN | 9月20日19.8M/S|免费Shadowrocket节点/Trojan节点/SSR节点/Clash节点/Singbox节点/V2ray节点节点推荐">梯子猫VPN | 9月20日19.8M/S|免费Shadowrocket节点/Trojan节点/SSR节点/Clash节点/Singbox节点/V2ray节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-10-free-node-subscribe.htm" title="梯子猫VPN | 10月10日19.7M/S|免费Clash节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点/SSR节点节点推荐">梯子猫VPN | 10月10日19.7M/S|免费Clash节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点/SSR节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-stash-2026-10-11.htm" title="梯子猫VPN | 10月11日21.2M/S|免费V2ray节点/Shadowrocket节点/Trojan节点/Singbox节点/Clash节点/SSR节点节点推荐">梯子猫VPN | 10月11日21.2M/S|免费V2ray节点/Shadowrocket节点/Trojan节点/Singbox节点/Clash节点/SSR节点节点推荐</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-9-14-clash-node-daily-updates.htm" title="梯子猫VPN | 9月14日22.9M/S|免费Singbox节点/V2ray节点/Trojan节点/SSR节点/Shadowrocket节点/Clash节点节点推荐">梯子猫VPN | 9月14日22.9M/S|免费Singbox节点/V2ray节点/Trojan节点/SSR节点/Shadowrocket节点/Clash节点节点推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-24-clash-verge-rev-node-share.htm" title="梯子猫VPN | 9月24日19.3M/S|免费Clash节点/Singbox节点/SSR节点/V2ray节点/Trojan节点/Shadowrocket节点节点推荐">梯子猫VPN | 9月24日19.3M/S|免费Clash节点/Singbox节点/SSR节点/V2ray节点/Trojan节点/Shadowrocket节点节点推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-30-clash-verge-rev-node-share.htm" title="梯子猫VPN | 9月30日22.8M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Clash节点节点推荐">梯子猫VPN | 9月30日22.8M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Clash节点节点推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-verge-rev-windows-2026-9-25.htm" title="梯子猫VPN | 9月25日21.9M/S|免费SSR节点/Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/Trojan节点节点推荐">梯子猫VPN | 9月25日21.9M/S|免费SSR节点/Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/Trojan节点节点推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-stash-2026-9-11.htm" title="梯子猫VPN | 9月11日20.6M/S|免费Trojan节点/SSR节点/Clash节点/V2ray节点/Shadowrocket节点/Singbox节点节点推荐">梯子猫VPN | 9月11日20.6M/S|免费Trojan节点/SSR节点/Clash节点/V2ray节点/Shadowrocket节点/Singbox节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-2026-9-13.htm" title="梯子猫VPN | 9月13日18.6M/S|免费SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/Clash节点/V2ray节点节点推荐">梯子猫VPN | 9月13日18.6M/S|免费SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/Clash节点/V2ray节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-stash-2026-9-9.htm" title="梯子猫VPN | 9月9日22.9M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点节点推荐">梯子猫VPN | 9月9日22.9M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-node-github-2026-9-15.htm" title="梯子猫VPN | 9月15日18.1M/S|免费Clash节点/Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点节点推荐">梯子猫VPN | 9月15日18.1M/S|免费Clash节点/Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-verge-rev-github-2026-9-19.htm" title="梯子猫VPN | 9月19日22.7M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/V2ray节点/Trojan节点节点推荐">梯子猫VPN | 9月19日22.7M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/V2ray节点/Trojan节点节点推荐</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/clash-verge-rev-windows-2026-9-7.htm" title="梯子猫VPN | 9月7日19.3M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/Trojan节点/SSR节点节点推荐">梯子猫VPN | 9月7日19.3M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/Trojan节点/SSR节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-2-clash-node.htm" title="梯子猫VPN | 10月2日18.3M/S|免费Shadowrocket节点/SSR节点/Trojan节点/Clash节点/Singbox节点/V2ray节点节点推荐">梯子猫VPN | 10月2日18.3M/S|免费Shadowrocket节点/SSR节点/Trojan节点/Clash节点/Singbox节点/V2ray节点节点推荐</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -300,7 +300,7 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">6</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
+                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
